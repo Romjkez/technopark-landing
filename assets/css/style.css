@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: 'Roboto-Light';
     font-face-name: 'Roboto-Light';
     src: url('../fonts/RobotoLight.eot') format('eot'),
@@ -6,11 +6,19 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Roboto-Regular';
+    font-face-name: 'Roboto-Regular';
+    src: url('../fonts/RobotoRegular.eot') format('eot'),
+    url('../fonts/RobotoRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 ul{
     margin:1rem 0 0 0;
 }
 body{
-    font-family: Roboto,Arial,sans-serif;
+    font-family: "Roboto-Regular", Arial, sans-serif;
 }
 .headerWrapper{
     background:url("../img/upperBanner.png") center center no-repeat;

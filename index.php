@@ -6,7 +6,6 @@
     <title>Детский технопарк</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap4_custom.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
