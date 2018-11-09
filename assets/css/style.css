@@ -7,18 +7,19 @@
     font-style: normal;
 }
 @font-face{
-    font-family: 'Roboto-Regular';
-    font-face-name: 'Roboto-Regular';
-    src: url('../fonts/RobotoRegular.eot') format('eot'),
-    url('../fonts/RobotoRegular.woff') format('woff');
-    font-weight: 400;
+    font-family: 'Roboto-Medium';
+    font-face-name: 'Roboto-Medium';
+    src: url('../fonts/RobotoMedium.eot') format('eot'),
+    url('../fonts/RobotoMedium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
 }
 ul{
     margin:1rem 0 0 0;
 }
 body{
-    font-family: "Roboto-Regular", Arial, sans-serif;
+    font-family: "Roboto-Medium", Arial, sans-serif;
+    margin: 0;
 }
 .headerWrapper{
     background:url("../img/upperBanner.png") center center no-repeat;
