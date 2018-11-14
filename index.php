@@ -1,12 +1,13 @@
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Детский технопарк</title>
+    <meta name="description"
+          content="Детский технопарк для школьников от Центра развития инжиниринга Московского Политеха">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-    <link href="assets/css/lib/jquery.fancybox.min.css" rel="stylesheet">
     <link href="assets/css/lib/bootstrap4_custom.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -30,7 +31,7 @@
             <a href="assets/img/4.jpg" data-fancybox="gallery" class="font-weight-bold">Фотогалерея ></a>
             <?php
             for($i=5;$i<41;$i++){
-                echo '<a href="../assets/img/technopark/'.$i.'.jpg" data-fancybox="gallery" hidden></a>';
+                echo '<a href="assets/img/' . $i . '.jpg" data-fancybox="gallery" hidden></a>';
             }
             ?>
         </div>
@@ -153,8 +154,8 @@
             <button href="#contacts" class="orderBtn">Заказать</button></div>
     </div>
     <?php
-    // вывод баннера о Мастер-классах
-    if (strtotime('31 December 2018') > strtotime('now')) {
+    // output banner
+    if (strtotime('31 December 2017') > strtotime('now')) {
         echo '<div class="row"><div class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=""></div></div>';
     }
     ?>
@@ -192,7 +193,8 @@
 </main>
 <footer class="container-fluid footer">
     <div class="locationMap row col-12">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D" frameborder="0" allowfullscreen="false"></iframe>
+        <iframe title="Расположение технопарка на карте" src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D"
+                frameborder="0" allowfullscreen="false"></iframe>
     </div>
     <div class="row">
         <div class="social col-12 col-sm-6 offset-sm-3 col-xl-4 offset-xl-4 col-xxl-3 offset-xxl-4 d-flex justify-content-around">
@@ -382,6 +384,7 @@
         </div>
     </div>
 </div>
+<link href="assets/css/lib/jquery.fancybox.min.css" rel="stylesheet">
 <script src="assets/js/jquery3.3.5.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
