@@ -155,8 +155,8 @@
     </div>
     <?php
     // output banner
-    if (strtotime('31 December 2017') > strtotime('now')) {
-        echo '<div class="row"><div class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=""></div></div>';
+    if (strtotime('31 December 2018') > strtotime('now')) {
+        echo '<div class="row"><div class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></div></div>';
     }
     ?>
     <div class="row">
@@ -254,7 +254,8 @@
             <div class="modal-body padding-lg">
                 <div class="container-fluid">
                     <div class="row">
-                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal" aria-label="Close" data-target=".bd-modal-cars"></button>
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-drones"></button>
                         <section class="col-12 col-lg-6 activityModalInfo">
                             <div class="activityModalInfo__header d-flex justify-content-between align-items-center">
                                 <div></div>
@@ -300,7 +301,8 @@
             <div class="modal-body padding-lg">
                 <div class="container-fluid">
                     <div class="row">
-                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal" aria-label="Close" data-target=".bd-modal-cars"></button>
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-design"></button>
                         <section class="col-12 col-lg-6 activityModalInfo">
                             <div class="activityModalInfo__header d-flex justify-content-between align-items-center">
                                 <div></div>
@@ -378,6 +380,76 @@
                                 </p>
                             </div>
                         </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-modal-bannerInfo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-xl">
+        <div class="modal-content">
+            <div class="modal-body padding-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-bannerInfo"></button>
+                        <div class="leftPart col-lg-6 d-flex flex-column">
+                            <div class="textBlock">
+                                <h6>В преддверии самого сказочного времени года<br>
+                                    Детский технопарк ЦРИ приглашает Вас на</h6>
+                                <h5 class="font-weight-bold">НОВОГОДНИЕ МАСТЕР-КЛАССЫ: "СКАЗОЧНАЯ ЕЛКА"</h5>
+                            </div>
+                            <div class="imgBlock text-center d-flex align-items-center justify-content-center">
+                                <h5>ПРИЯТНО, КОГДА РЕБЕНОК МОЖЕТ СДЕЛАТЬ<br>
+                                    ПОДАРОК ДЛЯ БЛИЗКИХ СВОИМИ РУКАМИ.</h5>
+                            </div>
+                        </div>
+                        <div class="rightPart col-lg-6">
+                            <div class="textBlock">
+                                <h6>
+                                    Стоимость: <span>500 рублей на человека</span><br>
+                                    При покупке 2 мастер-классов стоимость: <span>900 рублей</span><br>
+                                    Группа: <span>от 7 человек</span><br>
+                                    Продолжительность мастер-класса: <span>от 45 мин до 2 часов</span><br>
+                                    Максимальное количество человек в группе: <span>20</span><br>
+                                    Время проведения мастер-класса <span>выбираете ВЫ</span>
+                                </h6>
+                            </div>
+                            <div class="serviceBlock d-flex">
+                                <img class="d-block" src="assets/img/napravleniya.png" alt="Направления">
+                                <div class="serviceBlock__content d-flex align-items-center">
+                                    <p class="d-block">- Ниткография<br>
+                                        - Выжигание<br>
+                                        - Валяние<br>
+                                        - Вязание<br>
+                                        - Декупаж<br>
+                                        - Рисование<br>
+                                        - Лепка из пластилина<br>
+                                        - Картина из гвоздей и ниток<br>
+                                        - Новогодние декоративные магниты<br>
+                                        - Декорирование новогодних колпаков<br>
+                                        - Игрушки из фетра</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <img src="assets/img/paintTool.svg" alt="">
+                        <div class="footerContact col-lg-4">
+                            <div>Запись по телефону: <span>8&nbsp;(926)&nbsp;227&nbsp;31-88</span></div>
+                        </div>
+                        <div class="footerContact col-lg-4">
+                            <div>Запись по E-mail: <span>dtech.edc@gmail.com</span></div>
+                        </div>
+                        <div class="footerContact col-lg-4">
+                            <div>Адрес: <span>Лефортовский&nbsp;вал&nbsp;26</span></div>
+                        </div>
                     </div>
                 </div>
             </div>

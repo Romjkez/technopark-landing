@@ -14,6 +14,24 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'CenturyGothic';
+    font-face-name: 'CenturyGothic';
+    src: url('../fonts/CenturyGothic.eot') format('eot'),
+    url('../fonts/CenturyGothic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic-Bold';
+    font-face-name: 'CenturyGothic-Bold';
+    src: url('../fonts/CenturyGothic-Bold.eot') format('eot'),
+    url('../fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 ul{
     margin:1rem 0 0 0;
 }
@@ -251,6 +269,90 @@ iframe{padding:0;margin:0;width:100%;height:400px;}
 .banner:hover {
     cursor: pointer;
 }
+
+/*********************************************/
+.bd-modal-bannerInfo .modal-body {
+
+}
+
+.bd-modal-bannerInfo .leftPart {
+}
+
+.bd-modal-bannerInfo .textBlock {
+}
+
+.bd-modal-bannerInfo .textBlock h5 {
+    color: #00afc0;
+    padding-left: 10%;
+}
+
+.bd-modal-bannerInfo .textBlock h6 {
+    padding-left: 10%;
+    font-family: CenturyGothic-Bold, Roboto-Medium, sans-serif;
+}
+
+.bd-modal-bannerInfo .imgBlock {
+    color: #283e80;
+    margin: 5% 0 0 0;
+    min-height: 270px;
+    background: url("../img/brushesBg.png") center center no-repeat;
+}
+
+.bd-modal-bannerInfo .rightPart {
+}
+
+.bd-modal-bannerInfo .rightPart .textBlock h6 {
+    line-height: 1.3em;
+}
+
+.bd-modal-bannerInfo .rightPart .textBlock h6 span {
+    font-family: CenturyGothic, Roboto-Medium, sans-serif;
+    color: #aaaaac;
+}
+
+.bd-modal-bannerInfo .rightPart .serviceBlock img {
+    width: 40px;
+    margin-left: 10%;
+}
+
+.serviceBlock__content {
+    background: url("../img/4plusSign.svg") 100% 20% no-repeat #e9f2f2;
+    color: #373b2f;
+    background-size: 65% 60%;
+    font-family: CenturyGothic, Roboto-Regular, sans-serif;
+    width: 65%;
+}
+
+.serviceBlock__content p {
+    margin: 0 0 0 5%;
+}
+
+.bd-modal-bannerInfo .modal-footer {
+    background: #a5ccc8;
+    border-top: none;
+    min-height: 100px;
+    color: #fff;
+}
+
+.bd-modal-bannerInfo .modal-footer img {
+    width: 74px;
+    height: auto;
+    position: absolute;
+    bottom: 14%;
+    left: 10%;
+}
+
+.bd-modal-bannerInfo .modal-footer .footerContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.bd-modal-bannerInfo .modal-footer .footerContact span {
+    font-family: Roboto-Light, sans-serif;
+}
 /********************UI-ELEMENTS*************************/
 .orderBtn{
     background:#e7bf3c;
@@ -361,18 +463,25 @@ iframe{padding:0;margin:0;width:100%;height:400px;}
     .activityModalInfo__header div{
         visibility: hidden;
     }
+
+    .serviceBlock__content {
+        background-position: 95% 0;
+        background-size: 50% 40%;
+    }
 }
 
+/* banner for vertically oriented phones */
 @media screen and (max-width: 767.5px) and (orientation: portrait) {
-    /* vertically oriented mobile screens */
+
     .banner {
         background: url("../img/bannerMobile.jpg") center center no-repeat;
         background-size: cover;
     }
 }
 
+/* banner vertically oriented tablets */
 @media screen and (min-width: 767.5px) and (max-width: 1024.5px) and (orientation: portrait) {
-    /* vertically oriented tablets */
+
     .banner {
         padding: 0;
         background: url("../img/banner.jpg") center center no-repeat;
@@ -470,6 +579,55 @@ iframe{padding:0;margin:0;width:100%;height:400px;}
         margin-top:2%;
     }
 }
+
+@media screen and (max-width: 1114.5px) {
+    .bd-modal-bannerInfo .rightPart .serviceBlock img {
+        margin-left: 0;
+    }
+
+    .bd-modal-bannerInfo .modal-footer .footerContact {
+        display: block;
+    }
+
+    .serviceBlock__content {
+        width: 95%;
+    }
+
+    .serviceBlock__content p {
+        margin: 5%;
+    }
+
+    .bd-modal-bannerInfo .imgBlock {
+        margin: 0;
+        min-height: 150px;
+    }
+
+    .bd-modal-bannerInfo .textBlock h6, .bd-modal-bannerInfo .textBlock h5 {
+        padding-left: 0;
+    }
+
+    .bd-modal-bannerInfo h5 {
+        font-size: 1.1rem;
+    }
+
+    .modal-footer > div > div > img {
+        display: none;
+    }
+
+    .padding-lg {
+        padding: 2rem 0 1rem 0 !important;
+    }
+}
+
+@media screen and (min-width: 1115px) and (max-width: 1550.5px) {
+    .serviceBlock__content {
+        width: 85%;
+    }
+
+    .bd-modal-bannerInfo .modal-footer .footerContact span {
+        font-size: .86em;
+    }
+}
 @media screen and (min-width:1201px) and (max-width:1450.95px){
     .whyUs{
         margin-top:7%;
@@ -503,6 +661,11 @@ iframe{padding:0;margin:0;width:100%;height:400px;}
 @media screen and (max-width:1500px){
     .courseType__length h2{
         font-size:3em;
+    }
+
+    /* bg img*/
+    .bd-modal-bannerInfo .imgBlock {
+        background-size: 105% auto;
     }
 }
 @media screen and (min-width:1551px) and (max-width: 1750px){
