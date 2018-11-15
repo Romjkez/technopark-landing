@@ -156,7 +156,7 @@
     <?php
     // output banner
     if (strtotime('31 December 2018') > strtotime('now')) {
-        echo '<div class="row"><div class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></div></div>';
+        echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
     }
     ?>
     <div class="row">

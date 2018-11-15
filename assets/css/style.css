@@ -257,13 +257,13 @@ iframe{padding:0;margin:0;width:100%;height:400px;}
 }
 /*********************************************/
 .banner {
-    display: block;
     margin: 2% 0 0 0;
     padding: 0;
     background: url("../img/banner.jpg") center center no-repeat;
     background-size: contain;
     height: 65%;
     max-height: 555px;
+    border: none;
 }
 
 .banner:hover {
@@ -466,6 +466,14 @@ iframe{padding:0;margin:0;width:100%;height:400px;}
     .serviceBlock__content {
         background-position: 95% 0;
         background-size: 50% 40%;
+    }
+
+    .whyUs {
+        margin: 10% 0 0 0;
+    }
+
+    .whyUs > p {
+        margin: 0;
     }
 }
 

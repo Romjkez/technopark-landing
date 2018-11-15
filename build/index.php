@@ -89,8 +89,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 text-center"><h5 class="font-weight-bold">
-                Курсы не требуют специальной подготовки, школьники всему обучаются в рамках программы.</h5></div>
+        <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 text-center"><h5>Курсы не требуют
+                специальной подготовки, школьники всему обучаются в рамках программы.</h5></div>
     </div>
     <div class="row">
         <div class="schedule col-sm-7 offset-sm-0 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2 line-right"><p><span
@@ -146,7 +146,7 @@
     </div> <?php
     // output banner
     if (strtotime('31 December 2018') > strtotime('now')) {
-        echo '<div class="row"><div class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></div></div>';
+        echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
     }
     ?>
     <div class="row">
