@@ -91,7 +91,7 @@
     </div>
     <div class="row">
         <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 text-center">
-            <h5 class="font-weight-bold">Курсы не требуют специальной подготовки, школьники всему обучаются в рамках программы.</h5>
+            <h5>Курсы не требуют специальной подготовки, школьники всему обучаются в рамках программы.</h5>
         </div>
     </div>
     <div class="row">
