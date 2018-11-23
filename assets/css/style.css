@@ -113,7 +113,6 @@ body {
 .activity img {
     width: 75%;
     min-width: 150px;
-    -webkit-clip-path: circle(50%);
     clip-path: circle(50%)
 }
 
@@ -157,13 +156,11 @@ body {
     width: 50%;
     margin-top: 15%;
     font-size: 1.2em;
-    -ms-flex-item-align: start;
     align-self: flex-start;
     padding: 3%
 }
 
 .scheduleElem__time {
-    -ms-flex-item-align: end;
     align-self: flex-end;
     font-size: 2.6em;
     color: #fff;
@@ -174,7 +171,6 @@ body {
 .courseType {
     max-width: 350px;
     width: 25%;
-    -webkit-box-shadow: 0 0 160px 0 #e6e6e6;
     box-shadow: 0 0 160px 0 #e6e6e6
 }
 
@@ -249,12 +245,10 @@ iframe {
     width: 100%;
     max-width: 80px;
     height: auto;
-    -webkit-transition: .2s;
     transition: .2s
 }
 
 .social a > img:hover {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -267,14 +261,10 @@ iframe {
 
 .activityModalInfo__header h5 {
     margin: 0 0 2rem;
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
     flex: 3
 }
 
 .activityModalInfo__header div {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     margin: 0 0 2rem;
     height: .8em;
@@ -290,7 +280,6 @@ iframe {
 }
 
 .activityModalAdditional img {
-    -webkit-clip-path: circle(50%);
     clip-path: circle(50%)
 }
 
@@ -384,14 +373,8 @@ iframe {
 }
 
 .bd-modal-bannerInfo .modal-footer .footerContact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     font-size: 1.2em;
     color: #fff
@@ -441,10 +424,24 @@ iframe {
     background: url(../img/exitButton.svg) 50% no-repeat
 }
 
+.bd-modal-order img {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#orderForm .btn {
+    background-color: rgb(226, 192, 31);
+    color: #fff;
+}
+
+#orderForm .btn:hover {
+    background-color: #E2D526;
+}
+
+
 @media screen and (max-width: 767.5px) {
     ul {
         padding-left: 0;
-        -webkit-padding-start: 0;
         padding-inline-start: 0
     }
 
@@ -740,6 +737,20 @@ iframe {
 }
 
 @media screen and (max-width: 1114.5px) {
+    .bd-modal-order h3 {
+        margin: 2% 0;
+    }
+
+    .bd-modal-order .modalOrderInfo {
+        margin: 0 0 2% 0;
+    }
+
+    .bd-modal-order .btn-close {
+        width: 25px;
+        height: 25px;
+        top: .5rem;
+        right: .5rem;
+    }
     .bd-modal-bannerInfo .rightPart .serviceBlock img {
         margin-left: 0
     }

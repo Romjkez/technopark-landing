@@ -53,6 +53,7 @@
             for($i=5;$i<41;$i++){
                 echo '<a href="assets/img/' . $i . '.jpg" data-fancybox="gallery" hidden></a>';
             }
+
             ?>
         </div>
     </div>
@@ -160,7 +161,8 @@
             <div class="courseType__cost">
                 <h3>24 000 Р</h3>
             </div>
-            <button href="#contacts" class="orderBtn">Заказать</button>
+            <button href="#contacts" class="orderBtn" data-toggle="modal" data-target=".bd-modal-order">Заказать
+            </button>
             <div id="hint"></div>
         </div>
         <div class="courseType text-center">
@@ -171,11 +173,13 @@
             <div class="courseType__cost">
                 <h3>12 000 Р</h3>
             </div>
-            <button href="#contacts" class="orderBtn">Заказать</button></div>
+            <button href="#contacts" class="orderBtn" data-toggle="modal" data-target=".bd-modal-order">Заказать
+            </button>
+        </div>
     </div>
     <?php
     // output banner
-    if (strtotime('31 December 2018') > strtotime('now')) {
+    if (strtotime('1 January 2019') > strtotime('now')) {
         echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
     }
     ?>
@@ -476,6 +480,62 @@
         </div>
     </div>
 </div>
+<div class="modal fade bd-modal-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body padding-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-bannerInfo"></button>
+                        <div class="col-12 col-lg-5">
+                            <img class="d-block w-100" src="assets/img/modalOrderPhoto.jpg" alt="Photo">
+                        </div>
+                        <div class="col-12 col-lg-6 offset-lg-1">
+                            <h3>Записаться на курс</h3>
+                            <div class="modalOrderInfo d-flex flex-wrap">
+                                <div class="modalOrderInfo__telTitle w-25">Телефон:</div>
+                                <div class="modalOrderInfo__telContent w-75">+7 (915) 002-72-51<br>+7 (926) 227-31-88
+                                </div>
+                                <div class="modalOrderInfo__addressTitle w-25">Адрес:</div>
+                                <div class="modalOrderInfo__addressContent w-75">ул. Лефортовский Вал, 26 Москва</div>
+                                <div class="modalOrderInfo__emailTitle w-25">Email:</div>
+                                <div class="modalOrderInfo__emailContent w-75"><a href="mailto:dtech.edc@gmail.com">dtech.edc@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <form method="post" action="" id="orderForm">
+                                <div class="form-group"><input class="form-control" type="text" placeholder="Имя *"
+                                                               name="name" title="Как к вам обращаться?" required></div>
+                                <div class="form-group"><input class="form-control" type="email" placeholder="Email *"
+                                                               name="email"
+                                                               title="Ваш контактный email, на него мы ответим вам"
+                                                               required></div>
+                                <div class="form-group"><input class="form-control" type="tel" placeholder="Телефон *"
+                                                               name="phone" title="Контактный телефон для быстрой связи"
+                                                               required></div>
+                                <div class="form-group">
+                                    <select class="form-control" title="Выберите интересующее направление" name="choice"
+                                            required>
+                                        <option value="opt1">Автоконструирование</option>
+                                        <option value="opt2">Космос</option>
+                                        <option value="opt2">Беспилотники</option>
+                                        <option value="opt4">Дизайн</option>
+                                    </select></div>
+                                <div class="form-group"><textarea class="form-control" name="message"
+                                                                  placeholder="Сообщение"></textarea></div>
+                                <div class="form-group d-flex justify-content-end">
+                                    <button type="submit" class="btn">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <link href="assets/css/lib/jquery.fancybox.min.css" rel="stylesheet">
 <script src="assets/js/jquery3.3.5.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
@@ -491,6 +551,6 @@
             $("#hint").hide().text("").css({"top" : 0, "left" : 0});});
     }
         // smooth scroll to anchor
-        $(function(){$("button[href^='#']").click(function(){var _href = $(this).attr("href");$("html, body").animate({scrollTop: $(_href).offset().top+"px"});return false;});});
+        /*$(function(){$("button[href^='#']").click(function(){var _href = $(this).attr("href");$("html, body").animate({scrollTop: $(_href).offset().top+"px"});return false;});});*/
     }
 </script></body></html>
