@@ -52,7 +52,6 @@
             for ($i = 5; $i < 41; $i++) {
                 echo '<a href="assets/img/' . $i . '.jpg" data-fancybox="gallery" hidden></a>';
             }
-
             ?> </div>
     </div>
     <div class="row">
@@ -168,9 +167,9 @@
         </div>
     </div> <?php
     // output banner
-    if (strtotime('1 January 2019') > strtotime('now')) {
+    /*if (strtotime('1 January 2019') > strtotime('now')) {
         echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
-    }
+    }*/
     ?>
     <div class="row">
         <div class="contactsHeader col-sm-5 offset-sm-0 col-xl-3 offset-xl-1 col-xxl-2 offset-xxl-2 line-right font-weight-bold">
@@ -199,10 +198,7 @@
     </div>
 </main>
 <footer class="container-fluid footer">
-    <div class="locationMap row col-12">
-        <iframe title="Расположение технопарка на карте" src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D"
-                frameborder="0" allowfullscreen="false"></iframe>
-    </div>
+    <div class="locationMap row col-12"></div>
     <div class="row">
         <div class="social col-12 col-sm-6 offset-sm-3 col-xl-4 offset-xl-4 col-xxl-3 offset-xxl-4 d-flex justify-content-around">
             <a href="https://vk.com/technoparkedc"><img src="assets/img/vk.svg" alt="VK"></a><a
@@ -531,8 +527,15 @@
                 $("#hint").hide().text("").css({"top": 0, "left": 0});
             });
         }
-        // smooth scroll to anchor
-        /*$(function(){$("button[href^='#']").click(function(){var _href = $(this).attr("href");$("html, body").animate({scrollTop: $(_href).offset().top+"px"});return false;});});*/
+        window.onscroll = scrollCallback;
+
+        function scrollCallback() {
+            let scrolled = window.pageYOffset || window.scrollY || document.body.scrollTop;
+            if (scrolled > 2600 && document.querySelector('.locationMap').innerHTML == '') {
+                window.onscroll = null;
+                document.querySelector('.locationMap').innerHTML = '<iframe title="Расположение технопарка на карте" src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D"\ frameborder="0" allowfullscreen="false"></iframe>';
+            }
+        }
     }</script>
 </body>
 </html>
