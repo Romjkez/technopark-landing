@@ -503,6 +503,8 @@
                                 <div class="modalOrderInfo__emailTitle w-25">Email:</div>
                                 <div class="modalOrderInfo__emailContent w-75"><a href="mailto:dtech.edc@gmail.com">dtech.edc@gmail.com</a>
                                 </div>
+                                <div class="modalOrderInfo__warning w-100"><b>*</b> - обязательные для заполнения поля
+                                </div>
                             </div>
 
                             <form method="post" action="" id="orderForm">
