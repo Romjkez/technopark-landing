@@ -194,6 +194,7 @@
     </div>
     <?php
     // output banner
+    // todo ПОФИКСИТЬ sideimage на Edge
     if (strtotime('1 January 2019') > strtotime('now')) {
         echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
     }
