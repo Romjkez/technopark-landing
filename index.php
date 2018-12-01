@@ -194,9 +194,9 @@
     </div>
     <?php
     // output banner
-    /*if (strtotime('1 January 2019') > strtotime('now')) {
+    if (strtotime('1 January 2019') > strtotime('now')) {
         echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
-    }*/
+    }
     ?>
     <div class="row">
         <div class="contactsHeader col-sm-5 offset-sm-0 col-xl-3 offset-xl-1 col-xxl-2 offset-xxl-2 line-right font-weight-bold">
@@ -562,7 +562,9 @@
                                 </div>
                             </div>
 
-                            <form method="post" action="" id="orderForm">
+                            <form method="post"
+                                  action="http://test.std-247.ist.mospolytech.ru/libs/mailer/technoparkOrder.php"
+                                  id="orderForm">
                                 <div class="form-group"><input class="form-control" type="text" placeholder="Имя *"
                                                                name="name" title="Как к вам обращаться?" required></div>
                                 <div class="form-group"><input class="form-control" type="email" placeholder="Email *"
@@ -575,15 +577,15 @@
                                 <div class="form-group">
                                     <select class="form-control" title="Выберите интересующее направление" name="choice"
                                             required>
-                                        <option value="opt1">Автоконструирование</option>
-                                        <option value="opt2">Космос</option>
-                                        <option value="opt2">Беспилотники</option>
-                                        <option value="opt4">Дизайн</option>
+                                        <option value="Автоконструирование">Автоконструирование</option>
+                                        <option value="Космос">Космос</option>
+                                        <option value="Беспилотники">Беспилотники</option>
+                                        <option value="Дизайн">Дизайн</option>
                                     </select></div>
                                 <div class="form-group"><textarea class="form-control" name="message"
                                                                   placeholder="Сообщение"></textarea></div>
                                 <div class="form-group d-flex justify-content-end">
-                                    <button type="submit" class="btn">Отправить</button>
+                                    <button type="submit" class="btn" name="submit">Отправить</button>
                                 </div>
                             </form>
                         </div>
@@ -612,7 +614,6 @@
             });
         }
         window.onscroll = scrollCallback;
-
         function scrollCallback() {
             let scrolled = window.pageYOffset || window.scrollY || document.body.scrollTop;
             if (scrolled > 2600 && document.querySelector('.locationMap').innerHTML == '') {
@@ -620,7 +621,6 @@
                 document.querySelector('.locationMap').innerHTML = '<iframe title="Расположение технопарка на карте" src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D"\ frameborder="0" allowfullscreen="false"></iframe>';
             }
         }
-    }
-</script>
+    }</script>
 </body>
 </html>

@@ -14,9 +14,9 @@ gulp.task('css', () => {
         autoprefixer({browsers: ['last 2 versions']}),
         cssnano()
     ];
-    return gulp.src('./assets/css/style.css')
+    return gulp.src('assets/css/style.css')
         .pipe(postcss(plugins))
-        .pipe(gulp.dest('./build/assets/css'));
+        .pipe(gulp.dest('build/assets/css'));
 });
 gulp.task('minifyIndex', () => {
     return gulp.src('*.php')
@@ -27,4 +27,6 @@ gulp.task('build', () => {
     return gulp.src(pathsToMove, {base: 'assets/'})
         .pipe(gulp.dest('build/assets'))
 });
+
+
 gulp.task('default', ['css', 'minifyIndex', 'build']);
