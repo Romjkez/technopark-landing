@@ -33,8 +33,16 @@
     </noscript>
 </head>
 <body>
-<header class="container-fluid headerWrapper">
-    <div class="header col-12"><h1 class="text-center">Детский технопарк</h1></div>
+<header class="container-fluid headerWrapper h-100">
+    <div class="header col-12 h-50">
+        <h1 class="text-center">Детский технопарк<br>
+            <small>ЦРИ МОСКОВСКОГО ПОЛИТЕХА</small>
+        </h1>
+    </div>
+    <div class="btnBlock col-12 col-lg-6 offset-lg-3 d-flex justify-content-around flex-wrap">
+        <a class="scrollToActivities text-center" href="#activities">Подробнее</a>
+        <button data-toggle="modal" data-target=".bd-modal-order">Записаться!</button>
+    </div>
 </header>
 <main class="container-fluid">
     <div class="row">
@@ -74,7 +82,7 @@
                 будущей специальности;<br>
                 - дает возможность создавать проекты для участия
                 в конкурсах и олимпиадах, что поможет получить
-                до 10 баллов к ЕГЭ при поступлении в ВУЗ
+                <br><span>до 10 баллов к ЕГЭ</span> при поступлении в ВУЗ
             </p></div>
     </div>
     <div class="row">
@@ -83,7 +91,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="activities text-right col-sm-7 offset-sm-5 col-xl-5 offset-xl-6 col-xxl-4 offset-xxl-6 line-left">
+        <div id="activities"
+             class="activities text-right col-sm-7 offset-sm-5 col-xl-5 offset-xl-6 col-xxl-4 offset-xxl-6 line-left">
             <p>НАПРАВЛЕНИЯ <span class="font-weight-bold">ТЕХНОПАРКА</span></p></div>
     </div>
     <div class="row">
@@ -194,7 +203,6 @@
     </div>
     <?php
     // output banner
-    // todo ПОФИКСИТЬ sideimage на Edge
     if (strtotime('1 January 2019') > strtotime('now')) {
         echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
     }
@@ -242,7 +250,6 @@
         </div>
     </div>
 </footer>
-<!--Modal windows for "Подробнее" -->
 <div class="modal fade bd-modal-cars" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -546,7 +553,9 @@
                         <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
                                 aria-label="Close" data-target=".bd-modal-bannerInfo"></button>
                         <div class="col-12 col-lg-5">
-                            <img class="d-block w-100" src="assets/img/modalOrderPhoto.jpg" alt="Photo">
+                            <img class="d-block w-100" src="assets/img/modalOrderPhoto.jpg"
+                                 srcset="assets/img/modalOrderPhoto.jpg 1x,assets/img/modalOrderPhoto@2x.jpg 2x"
+                                 alt="Photo">
                         </div>
                         <div class="col-12 col-lg-6 offset-lg-1">
                             <h3>Записаться на курс</h3>
@@ -614,10 +623,18 @@
                 $("#hint").hide().text("").css({"top": 0, "left": 0});
             });
         }
+        // scroll to anchor when click
+        $('.scrollToActivities').click(function () {
+            const scroll_el = $(this).attr('href');
+            if ($(scroll_el).length != 0) {
+                $('html, body').animate({scrollTop: $(scroll_el).offset().top}, 500);
+            }
+            return false;
+        });
         window.onscroll = scrollCallback;
         function scrollCallback() {
             let scrolled = window.pageYOffset || window.scrollY || document.body.scrollTop;
-            if (scrolled > 2600 && document.querySelector('.locationMap').innerHTML == '') {
+            if (scrolled > 2500 && document.querySelector('.locationMap').innerHTML == '') {
                 window.onscroll = null;
                 document.querySelector('.locationMap').innerHTML = '<iframe title="Расположение технопарка на карте" src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D"\ frameborder="0" allowfullscreen="false"></iframe>';
             }
