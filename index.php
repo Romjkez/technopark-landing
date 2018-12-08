@@ -76,7 +76,7 @@
             <div class="sideImage__content d-flex align-items-center justify-content-end"><img
                         src="assets/img/sideImage.jpg" alt=""></div>
         </div>
-        <div class="description col-sm-6 offset-sm-0 col-xl-6 offset-xl-1 offset-xxl-1 col-xxl-4">
+        <div class="description col-sm-6 offset-sm-0 offset-lg-1 col-lg-5 col-xl-6 offset-xl-1 offset-xxl-1 col-xxl-4">
             <h2 class="font-weight-bold">ДЕТСКИЙ ТЕХНОПАРК</h2>
             <p>- помогает учащимся определиться с направлением
                 будущей специальности;<br>
@@ -555,7 +555,7 @@
                         <div class="col-12 col-lg-5">
                             <img class="d-block w-100" src="assets/img/modalOrderPhoto.jpg"
                                  srcset="assets/img/modalOrderPhoto.jpg 1x,assets/img/modalOrderPhoto@2x.jpg 2x"
-                                 alt="Photo">
+                                 alt="Фотография">
                         </div>
                         <div class="col-12 col-lg-6 offset-lg-1">
                             <h3>Записаться на курс</h3>

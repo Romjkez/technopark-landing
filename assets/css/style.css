@@ -3,7 +3,7 @@
     font-face-name: "Roboto-Light";
     src: url(../fonts/RobotoLight.eot) format("eot"), url(../fonts/RobotoLight.woff) format("woff");
     font-weight: 300;
-    font-style: normal
+    font-style: normal;
 }
 
 @font-face {
@@ -33,6 +33,7 @@
 ul {
     margin: 1rem 0 0
 }
+
 
 body {
     font-family: Roboto-Medium, Arial, sans-serif;
@@ -133,11 +134,11 @@ body {
 
 .sideImage__content {
     background: #a8a8aa;
-    height: 50%
+    height: 400px;
 }
 
 .sideImage__content img {
-    height: 85%;
+    height: 90%;
     margin-right: -10%;
     object-fit: cover;
     -o-object-fit: cover;
@@ -621,7 +622,7 @@ iframe {
 
 @media screen and (min-width: 768px) and (max-width: 992.95px) {
     .sideImage__content {
-        height: 25%
+        height: 250px;
     }
 
     .sideImage__content img {
@@ -712,7 +713,7 @@ iframe {
     }
 
     .sideImage__content {
-        height: 25%
+        height: 300px;
     }
 
     .activity:nth-child(3), .activity:nth-child(4) {
@@ -783,15 +784,9 @@ iframe {
     }
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1450px) {
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
     .sideImage__content img {
-        height: 80%
-    }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1300px) {
-    .sideImage__content img {
-        height: 74%
+        height: 85%
     }
 }
 
