@@ -129,7 +129,6 @@
                 </button>
             </div>
         </div>
-        <!------------------------------------------new-------------------------------------------------------------->
         <div class="activity offset-xl-0 col-xl-3 col-6 order-1 order-md-3 d-flex flex-column align-items-center">
             <div class="activityContent text-center">
                 <img src="assets/img/activities6.png" alt="" draggable="false">
@@ -166,7 +165,6 @@
                 </button>
             </div>
         </div>
-        <!-------------------------------------------------------------------------------------------------------->
     </div>
     <div class="row">
         <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 text-center">
@@ -503,7 +501,6 @@
         </div>
     </div>
 </div>
-<!------------------------------mdls--------------------------------------------------------------->
 <div class="modal fade bd-modal-python" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
@@ -590,13 +587,12 @@
                                     для
                                     ВАС!
                                 </p>
-                                <p>В программе курса:
-                                <ul>
+                                <span>В программе курса:</span>
+                                <ul style="">
                                     <li>Стилевая разработка</li>
                                     <li>Создание ручного эскиза и его доработка в программе Photoshop.</li>
                                     <li>Выполнение в материале</li>
                                 </ul>
-                                </p>
                                 <p class="lastP">Именитые преподаватели - доценты Кафедры Дизайн Московского
                                     Политехнического
                                     Университета, члены Союза дизайнеров Москвы и Московского союза художников помогут
@@ -651,7 +647,6 @@
         </div>
     </div>
 </div>
-<!------------------------------mdls--------------------------------------------------------------->
 <div class="modal fade bd-modal-order" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">

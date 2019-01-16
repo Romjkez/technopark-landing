@@ -444,6 +444,12 @@ iframe {
 #orderForm .btn:hover {
     background-color: #E2D526;
 }
+.bd-modal-vitrazh .activityModalInfo__content ul li{
+    margin-left: 3%;
+}
+.bd-modal-vitrazh .activityModalInfo__content .lastP{
+    margin-top:3rem;
+}
 
 @media screen and (max-width: 413px) {
     .btnBlock > button {
