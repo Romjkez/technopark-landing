@@ -129,6 +129,44 @@
                 </button>
             </div>
         </div>
+        <!------------------------------------------new-------------------------------------------------------------->
+        <div class="activity offset-xl-0 col-xl-3 col-6 order-1 order-md-3 d-flex flex-column align-items-center">
+            <div class="activityContent text-center">
+                <img src="assets/img/activities6.png" alt="" draggable="false">
+                <h5 class="font-weight-bold">Дизайн предметов среды.<br>Витраж</h5>
+                <button type="button" class="moreBtn" data-toggle="modal" data-target=".bd-modal-vitrazh">Подробнее
+                    >
+                </button>
+            </div>
+        </div>
+        <div class="activity offset-xl-0 col-xl-3 col-6 order-1 order-md-3 d-flex flex-column align-items-center">
+            <div class="activityContent text-center">
+                <img src="assets/img/activities7.png" alt="" draggable="false">
+                <h5 class="font-weight-bold">3D-моделирование</h5>
+                <button type="button" class="moreBtn" data-toggle="modal" data-target=".bd-modal-3d">Подробнее
+                    >
+                </button>
+            </div>
+        </div>
+        <div class="activity offset-xl-0 col-xl-3 col-6 order-1 order-md-3 d-flex flex-column align-items-center">
+            <div class="activityContent text-center">
+                <img src="assets/img/activities8.png" alt="" draggable="false">
+                <h5 class="font-weight-bold">Программирование на Python</h5>
+                <button type="button" class="moreBtn" data-toggle="modal" data-target=".bd-modal-python">Подробнее
+                    >
+                </button>
+            </div>
+        </div>
+        <div class="activity offset-xl-0 col-xl-3 col-6 order-1 order-md-3 d-flex flex-column align-items-center">
+            <div class="activityContent text-center">
+                <img src="assets/img/activities9.png" alt="" draggable="false">
+                <h5 class="font-weight-bold">Дизайн предметов среды. <br>Мозаика</h5>
+                <button type="button" class="moreBtn" data-toggle="modal" data-target=".bd-modal-mosaic">Подробнее
+                    >
+                </button>
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------->
     </div>
     <div class="row">
         <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 text-center">
@@ -201,12 +239,6 @@
             </button>
         </div>
     </div>
-    <?php
-    // output banner
-    if (strtotime('1 January 2019') > strtotime('now')) {
-        echo '<div class="row"><button class="banner col-12 d-flex justify-content-center" data-toggle="modal" data-target=".bd-modal-bannerInfo"></button></div>';
-    }
-    ?>
     <div class="row">
         <div class="contactsHeader col-sm-5 offset-sm-0 col-xl-3 offset-xl-1 col-xxl-2 offset-xxl-2 line-right font-weight-bold">
             <p>КОНТАКТЫ</p></div>
@@ -363,8 +395,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade bd-modal-design" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
+<div class="modal fade bd-modal-design" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-body padding-lg">
@@ -414,8 +445,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade bd-modal-aerospace" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
+<div class="modal fade bd-modal-aerospace" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-body padding-lg">
@@ -473,78 +503,156 @@
         </div>
     </div>
 </div>
-<div class="modal fade bd-modal-bannerInfo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-xl">
+<!------------------------------mdls--------------------------------------------------------------->
+<div class="modal fade bd-modal-python" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-body padding-lg">
                 <div class="container-fluid">
                     <div class="row">
                         <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
-                                aria-label="Close" data-target=".bd-modal-bannerInfo"></button>
-                        <div class="leftPart col-lg-6 d-flex flex-column">
-                            <div class="textBlock">
-                                <h6>В преддверии самого сказочного времени года<br>
-                                    Детский технопарк ЦРИ приглашает Вас на</h6>
-                                <h5 class="font-weight-bold">НОВОГОДНИЕ МАСТЕР-КЛАССЫ: "СКАЗОЧНАЯ ЕЛКА"</h5>
+                                aria-label="Close" data-target=".bd-modal-python"></button>
+                        <section class="col-12 col-lg-6 activityModalInfo">
+                            <div class="activityModalInfo__header d-flex justify-content-between align-items-center">
+                                <div></div>
+                                <h5 class="font-weight-bold text-right">Программирование на Python</h5>
                             </div>
-                            <div class="imgBlock text-center d-flex align-items-center justify-content-center">
-                                <h5>ПРИЯТНО, КОГДА РЕБЕНОК МОЖЕТ СДЕЛАТЬ<br>
-                                    ПОДАРОК ДЛЯ БЛИЗКИХ СВОИМИ РУКАМИ.</h5>
+                            <div class="activityModalInfo__content text-justify">
+                                <p>Программирование - специальность, спрос на которую с каждым годом только растет.
+                                    Держать
+                                    "руку на пульсе" поможет курс программирования на Python – самой актуальном языке
+                                    (на
+                                    нем работают Google, YouTube). Курс рассчитан на детей и взрослых от 10 лет.</p>
+                                <p class="lastP">Занятия ведут практикующие специалисты области на современном
+                                    оборудовании.</p>
                             </div>
-                        </div>
-                        <div class="rightPart col-lg-6">
-                            <div class="textBlock">
-                                <h6>
-                                    Стоимость: <span>500 рублей на человека</span><br>
-                                    При покупке 2 мастер-классов стоимость: <span>900 рублей</span><br>
-                                    Группа: <span>от 7 человек</span><br>
-                                    Продолжительность мастер-класса: <span>от 45 мин до 2 часов</span><br>
-                                    Максимальное количество человек в группе: <span>20</span><br>
-                                    Время проведения мастер-класса <span>выбираете ВЫ</span>
-                                </h6>
+                        </section>
+                        <section class="col-12 col-lg-6 activityModalAdditional d-flex flex-column align-items-center">
+                            <div class="activityModalAdditional__image d-flex justify-content-center w-100">
+                                <img class="d-block" src="assets/img/activities8.png" alt="" draggable="false">
                             </div>
-                            <div class="serviceBlock d-flex">
-                                <img class="d-block" src="assets/img/napravleniya.png" alt="Направления">
-                                <div class="serviceBlock__content d-flex align-items-center">
-                                    <p class="d-block">- Ниткография<br>
-                                        - Выжигание<br>
-                                        - Валяние<br>
-                                        - Вязание<br>
-                                        - Декупаж<br>
-                                        - Рисование<br>
-                                        - Лепка из пластилина<br>
-                                        - Картина из гвоздей и ниток<br>
-                                        - Новогодние декоративные магниты<br>
-                                        - Декорирование новогодних колпаков<br>
-                                        - Игрушки из фетра</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <img src="assets/img/paintTool.svg" alt="">
-                        <div class="footerContact col-lg-4">
-                            <div>Запись по телефону: <span>8&nbsp;(926)&nbsp;227&nbsp;31-88</span></div>
-                        </div>
-                        <div class="footerContact col-lg-4">
-                            <div>Запись по E-mail: <span>dtech.edc@gmail.com</span></div>
-                        </div>
-                        <div class="footerContact col-lg-4">
-                            <div>Адрес: <span>Лефортовский&nbsp;вал&nbsp;26</span></div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="modal fade bd-modal-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
+<div class="modal fade bd-modal-3d" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body padding-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-3d"></button>
+                        <section class="col-12 col-lg-6 activityModalInfo">
+                            <div class="activityModalInfo__header d-flex justify-content-between align-items-center">
+                                <div></div>
+                                <h5 class="font-weight-bold text-right">3D-моделирование</h5>
+                            </div>
+                            <div class="activityModalInfo__content text-justify">
+                                <p>Еще несколько лет назад 3D-печать считалась достаточно дорогим способом
+                                    изготовления деталей, в то время как сейчас - практически любой предмет можно
+                                    изготовить на 3D-принтере.</p>
+                                <p class="lastP">Курс рассчитан на тех, кто частично соприкасался с данной
+                                    областью и тех, кто пока только хочет начать. В программе курса вы научитесь с нуля
+                                    создавать 3D-модель.</p>
+                            </div>
+                        </section>
+                        <section class="col-12 col-lg-6 activityModalAdditional d-flex flex-column align-items-center">
+                            <div class="activityModalAdditional__image d-flex justify-content-center w-100">
+                                <img class="d-block" src="assets/img/activities7.png" alt="" draggable="false">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-modal-vitrazh" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body padding-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-vitrazh"></button>
+                        <section class="col-12 col-lg-6 activityModalInfo">
+                            <div class="activityModalInfo__header d-flex justify-content-between align-items-center">
+                                <div></div>
+                                <h5 class="font-weight-bold text-right">Дизайн предметов среды. Витраж</h5>
+                            </div>
+                            <div class="activityModalInfo__content text-justify">
+                                <p>Стилевое оформление дома и квартиры начинается с проработки концепции и разработке
+                                    дизайна будущего предмета интерьера. Вы решили начать карьеру дизайнера - этот курс
+                                    для
+                                    ВАС!
+                                </p>
+                                <p>В программе курса:
+                                <ul>
+                                    <li>Стилевая разработка</li>
+                                    <li>Создание ручного эскиза и его доработка в программе Photoshop.</li>
+                                    <li>Выполнение в материале</li>
+                                </ul>
+                                </p>
+                                <p class="lastP">Именитые преподаватели - доценты Кафедры Дизайн Московского
+                                    Политехнического
+                                    Университета, члены Союза дизайнеров Москвы и Московского союза художников помогут
+                                    разобраться в тонкостях дизайна интерьеров и его стилевой проработке.</p>
+                            </div>
+                        </section>
+                        <section
+                                class="col-12 col-lg-6 activityModalAdditional d-flex justify-content-center align-items-center">
+                            <div class="activityModalAdditional__image align-self-center">
+                                <img class="d-block" src="assets/img/activities6.png" alt="" draggable="false">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-modal-mosaic" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body padding-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-mosaic"></button>
+                        <section class="col-12 col-lg-6 activityModalInfo">
+                            <div class="activityModalInfo__header d-flex justify-content-between align-items-center">
+                                <div></div>
+                                <h5 class="font-weight-bold text-right">Дизайн предметов среды. Мозаика</h5>
+                            </div>
+                            <div class="activityModalInfo__content text-justify">
+                                <p> Мозаика - одно из самых востребованных направлений современного дизайна интерьеров.
+                                </p>
+                                <p> Создание мозаики начинается с стилевого анализа, который служит основой для эскиза
+                                    на бумаге и последующей его доработке в Photoshop.
+                                </p>
+                                <p class="lastP"> Курс ведут именитые преподаватели - доценты Кафедры Дизайн Московского
+                                    Политехнического Университета, члены Союза дизайнеров Москвы и Московского союза
+                                    художников.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="col-12 col-lg-6 activityModalAdditional d-flex justify-content-center align-items-center">
+                            <div class="activityModalAdditional__image">
+                                <img class="d-block" src="assets/img/activities9.png" alt="" draggable="false">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------mdls--------------------------------------------------------------->
+<div class="modal fade bd-modal-order" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-body padding-lg">
@@ -632,6 +740,7 @@
             return false;
         });
         window.onscroll = scrollCallback;
+
         function scrollCallback() {
             let scrolled = window.pageYOffset || window.scrollY || document.body.scrollTop;
             if (scrolled > 2500 && document.querySelector('.locationMap').innerHTML == '') {

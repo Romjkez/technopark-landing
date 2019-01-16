@@ -346,51 +346,6 @@ iframe {
     margin: 1rem 0 0
 }
 
-.banner {
-    margin: 2% 0 0;
-    padding: 0;
-    background: url(../img/banner.jpg) 50% no-repeat;
-    background-size: contain;
-    height: 65%;
-    max-height: 555px;
-    border: none
-}
-
-.banner:hover {
-    cursor: pointer
-}
-
-.bd-modal-bannerInfo .textBlock h5 {
-    color: #00afc0;
-    padding-left: 10%
-}
-
-.bd-modal-bannerInfo .textBlock h6 {
-    padding-left: 10%;
-    font-family: CenturyGothic-Bold, Roboto-Medium, sans-serif
-}
-
-.bd-modal-bannerInfo .imgBlock {
-    color: #283e80;
-    margin: 5% 0 0;
-    min-height: 270px;
-    background: url(../img/brushesBg.png) 50% no-repeat
-}
-
-.bd-modal-bannerInfo .rightPart .textBlock h6 {
-    line-height: 1.3em
-}
-
-.bd-modal-bannerInfo .rightPart .textBlock h6 span {
-    font-family: CenturyGothic, Roboto-Medium, sans-serif;
-    color: #aaaaac
-}
-
-.bd-modal-bannerInfo .rightPart .serviceBlock img {
-    width: 40px;
-    margin-left: 10%
-}
-
 .serviceBlock__content {
     background: url(../img/4plusSign.svg) 100% 20% no-repeat #e9f2f2;
     color: #373b2f;
@@ -603,23 +558,6 @@ iframe {
     }
 }
 
-@media screen and (max-width: 767.5px) and (orientation: portrait) {
-    .banner {
-        background: url(../img/bannerMobile.jpg) 50% no-repeat;
-        background-size: cover
-    }
-}
-
-@media screen and (min-width: 767.5px) and (max-width: 1024.5px) and (orientation: portrait) {
-    .banner {
-        padding: 0;
-        background: url(../img/banner.jpg) 50% no-repeat;
-        background-size: contain;
-        height: 35%;
-        max-height: 400px
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 992.95px) {
     .sideImage__content {
         height: 250px;
@@ -630,7 +568,7 @@ iframe {
         margin: 0
     }
 
-    .activity:nth-child(3), .activity:nth-child(4) {
+    .activity:nth-child(3), .activity:nth-child(4), .activity:nth-child(5), .activity:nth-child(6), .activity:nth-child(7), .activity:nth-child(8) {
         margin-top: 7%
     }
 
@@ -716,7 +654,7 @@ iframe {
         height: 300px;
     }
 
-    .activity:nth-child(3), .activity:nth-child(4) {
+    .activity:nth-child(3), .activity:nth-child(4),.activity:nth-child(5), .activity:nth-child(6), .activity:nth-child(7), .activity:nth-child(8) {
         margin-top: 7%
     }
 
@@ -757,6 +695,9 @@ iframe {
     .locationInfo {
         margin-top: 3%
     }
+    .sideImage__content img {
+        height: 85%
+    }
 }
 
 @media screen and (max-width: 1199.5px) {
@@ -765,7 +706,11 @@ iframe {
         border-left: none
     }
 }
-
+@media screen and (min-width: 1200px){
+    .activity:nth-child(5), .activity:nth-child(6), .activity:nth-child(7), .activity:nth-child(8) {
+        margin-top: 3%
+    }
+}
 @media screen and (max-width: 1500px) {
     .courseType__length h2 {
         font-size: 3em
@@ -781,12 +726,6 @@ iframe {
 @media screen and (min-width: 1451px) and (max-width: 1550px) {
     .sideImage__content img {
         height: 72%
-    }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1450px) {
-    .sideImage__content img {
-        height: 85%
     }
 }
 
