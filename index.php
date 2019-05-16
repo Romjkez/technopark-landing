@@ -636,7 +636,8 @@
                                 </p>
                             </div>
                         </section>
-                        <section class="col-12 col-lg-6 activityModalAdditional d-flex justify-content-center align-items-center">
+                        <section
+                                class="col-12 col-lg-6 activityModalAdditional d-flex justify-content-center align-items-center">
                             <div class="activityModalAdditional__image">
                                 <img class="d-block" src="assets/img/activities9.png" alt="" draggable="false">
                             </div>
@@ -708,6 +709,39 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="news-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body padding-lg">
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
+                                aria-label="Close" data-target=".bd-modal-bannerInfo"></button>
+                        <div class="col-12">
+                            <p>Завтра в Детском технопарке ЦРИ пройдёт «День без турникетов» - это ваш шанс
+                                погрузиться в атмосферу интерактивного обучения👩‍💻, узнать как ребята в наших
+                                лабораториях генерируют идеи 💡 и воплощают их в жизнь!
+                            </p>
+                            <p>И, кстати, мы пригласили для вас 🌟 Евгению Благову - победительницу 3 сезона шоу
+                                «Голос»🔊!</p>
+
+                            <p>Ждём вас <b>17 мая в 12:00</b> - начало экскурсии!🕐</p>
+
+                            <p>Для записи:
+                                📞 <a href="tel:+79150027251">8-915-002-72-51</a><br>
+                                📩 <a href="mailto: dtech.edc@gmail.com">dtech.edc@gmail.com</a>
+                                <br>
+                                <img src="https://pp.userapi.com/c855436/v855436564/42b62/hQNSw7CN3AE.jpg"
+                                     style="max-width:900px;max-height:400px;margin: 0 auto"
+                                     alt="Фотография">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <link href="assets/css/lib/jquery.fancybox.min.css" rel="stylesheet">
 <script src="assets/js/jquery3.3.5.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
@@ -715,6 +749,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
     window.onload = function () {
+        showNewsModal();
         if (screen.width > 768) {
             $("[data-tooltip]").mousemove(function (eventObject) {
                 $data_tooltip = $(this).attr("data-tooltip");
@@ -741,6 +776,13 @@
             if (scrolled > 2500 && document.querySelector('.locationMap').innerHTML == '') {
                 window.onscroll = null;
                 document.querySelector('.locationMap').innerHTML = '<iframe title="Расположение технопарка на карте" src="https://yandex.ru/map-widget/v1/-/CBBoI8Bj2D"\ frameborder="0" allowfullscreen="false"></iframe>';
+            }
+        }
+
+        function showNewsModal() {
+            if (!localStorage.getItem('news-shown')) {
+                $('#news-modal').modal();
+                localStorage.setItem('news-shown', 'true')
             }
         }
     }</script>

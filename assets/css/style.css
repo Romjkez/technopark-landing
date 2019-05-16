@@ -34,7 +34,6 @@ ul {
     margin: 1rem 0 0
 }
 
-
 body {
     font-family: Roboto-Medium, Arial, sans-serif;
     margin: 0
@@ -89,6 +88,7 @@ body {
     cursor: pointer;
     background-color: #ef9233;
 }
+
 .about {
     margin-top: 2%
 }
@@ -109,6 +109,7 @@ body {
     color: #fff;
     font-weight: bold;
 }
+
 .childrenTechnopark h2 span {
     color: #0c5d5e
 }
@@ -391,6 +392,7 @@ iframe {
     border: none;
     text-align: center;
 }
+
 .orderBtn {
     background: #ed7b07;
     display: block;
@@ -444,11 +446,13 @@ iframe {
 #orderForm .btn:hover {
     background-color: #E2D526;
 }
-.bd-modal-vitrazh .activityModalInfo__content ul li{
+
+.bd-modal-vitrazh .activityModalInfo__content ul li {
     margin-left: 3%;
 }
-.bd-modal-vitrazh .activityModalInfo__content .lastP{
-    margin-top:3rem;
+
+.bd-modal-vitrazh .activityModalInfo__content .lastP {
+    margin-top: 3rem;
 }
 
 @media screen and (max-width: 413px) {
@@ -460,6 +464,7 @@ iframe {
         width: 75%;
     }
 }
+
 @media screen and (max-width: 767.5px) {
     ul {
         padding-left: 0;
@@ -660,7 +665,7 @@ iframe {
         height: 300px;
     }
 
-    .activity:nth-child(3), .activity:nth-child(4),.activity:nth-child(5), .activity:nth-child(6), .activity:nth-child(7), .activity:nth-child(8) {
+    .activity:nth-child(3), .activity:nth-child(4), .activity:nth-child(5), .activity:nth-child(6), .activity:nth-child(7), .activity:nth-child(8) {
         margin-top: 7%
     }
 
@@ -701,6 +706,7 @@ iframe {
     .locationInfo {
         margin-top: 3%
     }
+
     .sideImage__content img {
         height: 85%
     }
@@ -712,11 +718,13 @@ iframe {
         border-left: none
     }
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
     .activity:nth-child(5), .activity:nth-child(6), .activity:nth-child(7), .activity:nth-child(8) {
         margin-top: 3%
     }
 }
+
 @media screen and (max-width: 1500px) {
     .courseType__length h2 {
         font-size: 3em
@@ -750,6 +758,7 @@ iframe {
         top: .5rem;
         right: .5rem;
     }
+
     .bd-modal-bannerInfo .rightPart .serviceBlock img {
         margin-left: 0
     }
