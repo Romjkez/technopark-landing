@@ -594,8 +594,7 @@
                             <p>Для записи: 📞 <a href="tel:+79150027251">8-915-002-72-51</a><br>📩 <a
                                         href="mailto: dtech.edc@gmail.com">dtech.edc@gmail.com</a><br><img
                                         src="https://pp.userapi.com/c855436/v855436564/42b62/hQNSw7CN3AE.jpg"
-                                        style="max-width:900px;max-height:400px;margin: 0 auto" alt="Фотография"></p>
-                        </div>
+                                        style="max-height:400px;margin: 0 auto;" alt="Фотография"></p></div>
                     </div>
                 </div>
             </div>

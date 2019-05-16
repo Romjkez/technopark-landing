@@ -732,7 +732,7 @@
                                 📩 <a href="mailto: dtech.edc@gmail.com">dtech.edc@gmail.com</a>
                                 <br>
                                 <img src="https://pp.userapi.com/c855436/v855436564/42b62/hQNSw7CN3AE.jpg"
-                                     style="max-width:900px;max-height:400px;margin: 0 auto"
+                                     style="max-height:400px;margin: 0 auto;"
                                      alt="Фотография">
                             </p>
                         </div>

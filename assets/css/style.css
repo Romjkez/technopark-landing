@@ -567,6 +567,10 @@ iframe {
     .whyUs > p {
         margin: 0
     }
+
+    #news-modal img {
+        width: 100%
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992.95px) {
@@ -593,6 +597,10 @@ iframe {
 
     .activityModalInfo__header div {
         visibility: hidden
+    }
+
+    #news-modal img {
+        width: 100%
     }
 }
 
