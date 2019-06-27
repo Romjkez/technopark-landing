@@ -212,14 +212,15 @@
             <p>СТОИМОСТЬ <span class="font-weight-bold">ОБУЧЕНИЯ</span></p></div>
     </div>
     <div class="row justify-content-center">
-        <div class="courseType text-center"
+        <div class="courseType text-center d-flex flex-column justify-content-between"
              data-tooltip="Подготовит Вашего ребенка к олимпиадам и конкурсам, а также к поступлению в институт.">
             <div class="courseType__length">
                 <h2 class="font-weight-bold"><span>72</span> часа</h2>
                 <p>продвинутый курс</p>
             </div>
             <div class="courseType__cost">
-                <h3>24 000 Р</h3>
+                <h3>26 000 Р</h3>
+                <span>обычная стоимость</span>
             </div>
             <button href="#contacts" class="orderBtn" data-toggle="modal" data-target=".bd-modal-order">Заказать
             </button>
@@ -231,7 +232,14 @@
                 <p>углубленный курс</p>
             </div>
             <div class="courseType__cost">
-                <h3>12 000 Р</h3>
+                <h3>13 500 Р</h3>
+                <span>обычная стоимость</span>
+                <br><br>
+                <h3>12 500 Р</h3>
+                <span>Сбербанк</span>
+                <br><br>
+                <h3>10 800 Р</h3>
+                <span>для школ</span>
             </div>
             <button href="#contacts" class="orderBtn" data-toggle="modal" data-target=".bd-modal-order">Заказать
             </button>
@@ -588,7 +596,7 @@
                                     ВАС!
                                 </p>
                                 <span>В программе курса:</span>
-                                <ul style="">
+                                <ul>
                                     <li>Стилевая разработка</li>
                                     <li>Создание ручного эскиза и его доработка в программе Photoshop.</li>
                                     <li>Выполнение в материале</li>
@@ -636,7 +644,8 @@
                                 </p>
                             </div>
                         </section>
-                        <section class="col-12 col-lg-6 activityModalAdditional d-flex justify-content-center align-items-center">
+                        <section
+                                class="col-12 col-lg-6 activityModalAdditional d-flex justify-content-center align-items-center">
                             <div class="activityModalAdditional__image">
                                 <img class="d-block" src="assets/img/activities9.png" alt="" draggable="false">
                             </div>
