@@ -44,7 +44,10 @@
         <button data-toggle="modal" data-target=".bd-modal-order">Записаться!</button>
     </div>
 </header>
-<main class="container-fluid">
+<main class="container-fluid" role="main">
+    <section role="complementary">
+        <div class="row"><h2>Внимание! Открыта запись на курсы!</h2></div>
+    </section>
     <div class="row">
         <div class="about text-right col-sm-4 offset-sm-8 col-xl-3 offset-xl-8 col-xxl-2 offset-xxl-8 line-left"><p>О
                 <span class="font-weight-bold">НАС</span></p></div>
@@ -60,11 +63,11 @@
     <div class="row">
         <div class="photoGallery col-12 text-center">
             <a href="assets/img/4.jpg" data-fancybox="gallery" class="font-weight-bold">Фотогалерея ></a>
-            <?php
-            for ($i = 5; $i < 41; $i++) {
-                echo '<a href="assets/img/' . $i . '.jpg" data-fancybox="gallery" hidden></a>';
-            }
-            ?>
+          <?php
+          for ($i = 5; $i < 41; $i++) {
+            echo '<a href="assets/img/' . $i . '.jpg" data-fancybox="gallery" hidden></a>';
+          }
+          ?>
         </div>
     </div>
     <div class="row">
@@ -703,6 +706,10 @@
                                         <option value="Космос">Космос</option>
                                         <option value="Беспилотники">Беспилотники</option>
                                         <option value="Дизайн">Дизайн</option>
+                                        <option value="Дизайн предметов среды. Витраж">Дизайн предметов среды. Витраж</option>
+                                        <option value="Дизайн предметов среды. Мозаика">Дизайн предметов среды. Мозаика</option>
+                                        <option value="3D-моделирование">Дизайн предметов среды. Витраж</option>
+                                        <option value="Программирование на Python">Программирование на Python</option>
                                     </select></div>
                                 <div class="form-group"><textarea class="form-control" name="message"
                                                                   placeholder="Сообщение"></textarea></div>
