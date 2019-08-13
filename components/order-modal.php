@@ -1,5 +1,5 @@
 <?php
-function getOrderModal(int $level){
+function getOrderModal($level){
   $lvl = '';
   for ($i = 0; $i < $level; $i++) {
     $lvl .= '../';

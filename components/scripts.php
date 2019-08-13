@@ -1,5 +1,5 @@
 <?php
-function getScripts(int $level)
+function getScripts($level)
 {
   $lvl = '';
   for ($i = 0; $i < $level; $i++) {

@@ -1,5 +1,5 @@
 <?php
-function getHead(string $title, int $level)
+function getHead($title, $level)
 {
   $lvl = '';
   for ($i = 0; $i < $level; $i++) {

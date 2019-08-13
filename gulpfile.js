@@ -7,7 +7,10 @@ const pathsToMove = [
     'assets/css/lib/*.css',
     'assets/fonts/*.*',
     'assets/img/*.*',
-    'assets/js/*.*'
+    'assets/js/*.*',
+    'news/**',
+    '.htaccess',
+    './components/**'
 ];
 gulp.task('css', () => {
     let plugins = [
