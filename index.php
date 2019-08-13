@@ -16,20 +16,24 @@ getHead('', 0);
     </div>
 </header>
 <main class="container-fluid" role="main">
-    <section role="complementary">
+    <section role="complementary" class="news pb-4">
         <div class="row">
-            <div class="col text-center">
-                <h2 class="my-4" style="color:#ff9a2e">Последние новости</h2>
+            <div class="col-xl-8 offset-xl-2">
+                <h2 class="my-5 text-center" style="color:#ff9a2e">Последние новости</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2">
                 <ul class="list-unstyled">
-                    <li class="h4"><a href="/news/1">Открыта запись на курс «АВТОКОНСТРУИРОВАНИЕ»</a></li>
-                    <li class="h4"><a href="/news/2">Запуск всех курсов со 2 сентября</a></li>
-                    <li class="h4"><a href="/news/3">30 сентября - запуск 🚀 проекта «УЧЕБНЫЙ ДЕНЬ В ДЕТСКОМ
+                    <li class="h5"><a class="text-primary" href="/news/1">- Открыта запись на курс «АВТОКОНСТРУИРОВАНИЕ»</a></li>
+                    <li class="h5"><a class="text-primary" href="/news/2">- Запуск всех курсов со 2 сентября</a></li>
+                    <li class="h5"><a class="text-primary" href="/news/3">- 30 сентября - запуск 🚀 проекта «УЧЕБНЫЙ ДЕНЬ В ДЕТСКОМ
                             ТЕХНОПАРКЕ»</a></li>
                 </ul>
             </div>
         </div>
     </section>
-    <div class="row">
+    <div class="row mt-3">
         <div class="about text-right col-sm-4 offset-sm-8 col-xl-3 offset-xl-8 col-xxl-2 offset-xxl-8 line-left"><p>О
                 <span class="font-weight-bold">НАС</span></p></div>
     </div>
