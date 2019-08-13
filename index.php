@@ -1,37 +1,8 @@
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Детский технопарк</title>
-    <meta name="description"
-          content="Детский технопарк для школьников от Центра развития инжиниринга Московского Политеха">
-    <link rel="icon" href="assets/img/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-    <link href="assets/css/lib/bootstrap4_custom.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <script type="text/javascript">!function (e, t, a) {
-            (t[a] = t[a] || []).push(function () {
-                try {
-                    t.yaCounter51162917 = new Ya.Metrika2({
-                        id: 51162917,
-                        clickmap: !0,
-                        trackLinks: !0,
-                        accurateTrackBounce: !0
-                    })
-                } catch (e) {
-                }
-            });
-            var c = e.getElementsByTagName("script")[0], n = e.createElement("script"), r = function () {
-                c.parentNode.insertBefore(n, c)
-            };
-            n.type = "text/javascript", n.async = !0, n.src = "https://mc.yandex.ru/metrika/tag.js", "[object Opera]" == t.opera ? e.addEventListener("DOMContentLoaded", r, !1) : r()
-        }(document, window, "yandex_metrika_callbacks2");</script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/51162917" style="position:absolute; left:-9999px;" alt=""/></div>
-    </noscript>
-</head>
+<?php
+require_once 'components/head.php';
+getHead('', 0);
+?>
 <body>
 <header class="container-fluid headerWrapper h-100">
     <div class="header col-12 h-50">
@@ -46,23 +17,33 @@
 </header>
 <main class="container-fluid" role="main">
     <section role="complementary">
-        <div class="row"><h2>Внимание! Открыта запись на курсы!</h2></div>
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="my-4" style="color:#ff9a2e">Последние новости</h2>
+                <ul class="list-unstyled">
+                    <li class="h4"><a href="/news/1">Открыта запись на курс «АВТОКОНСТРУИРОВАНИЕ»</a></li>
+                    <li class="h4"><a href="/news/2">Запуск всех курсов со 2 сентября</a></li>
+                    <li class="h4"><a href="/news/3">30 сентября - запуск 🚀 проекта «УЧЕБНЫЙ ДЕНЬ В ДЕТСКОМ
+                            ТЕХНОПАРКЕ»</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
     <div class="row">
         <div class="about text-right col-sm-4 offset-sm-8 col-xl-3 offset-xl-8 col-xxl-2 offset-xxl-8 line-left"><p>О
                 <span class="font-weight-bold">НАС</span></p></div>
     </div>
     <div class="row">
-        <div class="childrenTechnopark col-xl-5 offset-xl-1 col-xxl-4 col-12 offset-xxl-2 offset-0"><h2
-                    class="font-weight-bold">ДЕТСКИЙ <span>ТЕХНОПАРК</span> ЦРИ</h2>
+        <div class="childrenTechnopark col-xl-5 offset-xl-1 col-xxl-4 col-12 offset-xxl-2 offset-0">
+            <h2 class="font-weight-bold my-5">ДЕТСКИЙ <span class="text-main">ТЕХНОПАРК</span> ЦРИ</h2>
             <p>- это инженерно-технологический комплекс, на базе которого
                 проводятся углубленные технико-ориентированные курсы
                 дополнительного образования для школьников.</p>
         </div>
     </div>
     <div class="row">
-        <div class="photoGallery col-12 text-center">
-            <a href="assets/img/4.jpg" data-fancybox="gallery" class="font-weight-bold">Фотогалерея ></a>
+        <div class="photoGallery col-12 mt-3 text-center">
+            <a href="assets/img/4.jpg" data-fancybox="gallery" class="text-main font-weight-bold">Фотогалерея ></a>
           <?php
           for ($i = 5; $i < 41; $i++) {
             echo '<a href="assets/img/' . $i . '.jpg" data-fancybox="gallery" hidden></a>';
@@ -89,7 +70,7 @@
             </p></div>
     </div>
     <div class="row">
-        <div class="groupsInfo col-12 text-center font-weight-bold">
+        <div class="groupsInfo col-12 text-center font-weight-bold text-main">
             <p><span>Возраст обучающихся: 14-17 лет</span> Численность группы: 15 человек</p>
         </div>
     </div>
@@ -170,7 +151,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 text-center">
+        <div class="requirements col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 mx-auto text-center">
             <h5>Курсы не требуют специальной подготовки, школьники всему обучаются в рамках программы.</h5>
         </div>
     </div>
@@ -253,7 +234,7 @@
             <p>КОНТАКТЫ</p></div>
     </div>
     <div id="contacts" class="row">
-        <div class="option col-12">Для заказа Вы можете выбрать любой удобный для Вас способ:</div>
+        <div class="option col-12 text-main">Для заказа Вы можете выбрать любой удобный для Вас способ:</div>
     </div>
     <div class="row">
         <div class="contacts col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2 order-1 order-xl-0 d-flex flex-column">
@@ -311,9 +292,9 @@
                                     произвести установку и настройку компонентов транспортного средства на базе
                                     специально разработанного образовательного конструктора EDUCAR.</p>
                                 <p>Теоретические знания подаются в интерактивной форме - их основой являются лекции,
-                                    записанные в <span>формате виртуальной реальности</span>, обеспечивающие полное
+                                    записанные в <span class="text-main">формате виртуальной реальности</span>, обеспечивающие полное
                                     погружение слушателей в учебный процесс. Практическая часть обеспечивает закрепление
-                                    полученных знаний посредством работы с <span>образовательным конструктором.</span>
+                                    полученных знаний посредством работы с <span class="text-main">образовательным конструктором.</span>
                                 </p>
                                 <p class="lastP">В лаборатории используется современное оборудование: образовательный
                                     конструктор EDUCAR (имитирующий реальные детали автомобиля), образовательный
@@ -334,7 +315,7 @@
                                     <li>Проведение испытаний различных конфигураций модели.</li>
                                 </ul>
                             </div>
-                            <div class="activityModalAdditional__partners">
+                            <div class="activityModalAdditional__partners text-main">
                                 <p>Образовательный партнер: ООО МИП «Сабер»,<br>
                                     Транспортный факультет Московского Политеха.<br>
                                     Индустриальный партнер: Ассоциация «Автонет»<br>
@@ -659,78 +640,21 @@
         </div>
     </div>
 </div>
-<div class="modal fade bd-modal-order" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-body padding-lg">
-                <div class="container-fluid">
-                    <div class="row">
-                        <button type="button" class="close btn-close font-weight-normal" data-dismiss="modal"
-                                aria-label="Close" data-target=".bd-modal-bannerInfo"></button>
-                        <div class="col-12 col-lg-5">
-                            <img class="d-block w-100" src="assets/img/modalOrderPhoto.jpg"
-                                 srcset="assets/img/modalOrderPhoto.jpg 1x,assets/img/modalOrderPhoto@2x.jpg 2x"
-                                 alt="Фотография">
-                        </div>
-                        <div class="col-12 col-lg-6 offset-lg-1">
-                            <h3>Записаться на курс</h3>
-                            <div class="modalOrderInfo d-flex flex-wrap">
-                                <div class="modalOrderInfo__telTitle w-25">Телефон:</div>
-                                <div class="modalOrderInfo__telContent w-75">+7 (915) 002-72-51<br>+7 (926) 227-31-88
-                                </div>
-                                <div class="modalOrderInfo__addressTitle w-25">Адрес:</div>
-                                <div class="modalOrderInfo__addressContent w-75">ул. Лефортовский Вал, 26 Москва</div>
-                                <div class="modalOrderInfo__emailTitle w-25">Email:</div>
-                                <div class="modalOrderInfo__emailContent w-75"><a href="mailto:dtech.edc@gmail.com">dtech.edc@gmail.com</a>
-                                </div>
-                                <div class="modalOrderInfo__warning w-100"><b>*</b> - обязательные для заполнения поля
-                                </div>
-                            </div>
+<?php
+require_once 'components/order-modal.php';
+getOrderModal(0);
+?>
 
-                            <form method="post"
-                                  action="http://test.std-247.ist.mospolytech.ru/libs/mailer/technoparkOrder.php"
-                                  id="orderForm">
-                                <div class="form-group"><input class="form-control" type="text" placeholder="Имя *"
-                                                               name="name" title="Как к вам обращаться?" required></div>
-                                <div class="form-group"><input class="form-control" type="email" placeholder="Email *"
-                                                               name="email"
-                                                               title="Ваш контактный email, на него мы ответим вам"
-                                                               required></div>
-                                <div class="form-group"><input class="form-control" type="tel" placeholder="Телефон *"
-                                                               name="phone" title="Контактный телефон для быстрой связи"
-                                                               required></div>
-                                <div class="form-group">
-                                    <select class="form-control" title="Выберите интересующее направление" name="choice"
-                                            required>
-                                        <option value="Автоконструирование">Автоконструирование</option>
-                                        <option value="Космос">Космос</option>
-                                        <option value="Беспилотники">Беспилотники</option>
-                                        <option value="Дизайн">Дизайн</option>
-                                        <option value="Дизайн предметов среды. Витраж">Дизайн предметов среды. Витраж</option>
-                                        <option value="Дизайн предметов среды. Мозаика">Дизайн предметов среды. Мозаика</option>
-                                        <option value="3D-моделирование">Дизайн предметов среды. Витраж</option>
-                                        <option value="Программирование на Python">Программирование на Python</option>
-                                    </select></div>
-                                <div class="form-group"><textarea class="form-control" name="message"
-                                                                  placeholder="Сообщение"></textarea></div>
-                                <div class="form-group d-flex justify-content-end">
-                                    <button type="submit" class="btn" name="submit">Отправить</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+require_once 'components/scripts.php';
+getScripts(0);
+?>
 <link href="assets/css/lib/jquery.fancybox.min.css" rel="stylesheet">
-<script src="assets/js/jquery3.3.5.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+
 <script>
     window.onload = function () {
+        $("input[type='tel']").mask("+7(999) 999-9999");
         if (screen.width > 768) {
             $("[data-tooltip]").mousemove(function (eventObject) {
                 $data_tooltip = $(this).attr("data-tooltip");

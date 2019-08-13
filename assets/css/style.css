@@ -34,6 +34,9 @@ ul {
     margin: 1rem 0 0
 }
 
+.text-main {
+    color: #0c5d5e;
+}
 
 body {
     font-family: Roboto-Medium, Arial, sans-serif;
@@ -95,8 +98,7 @@ body {
 }
 
 .childrenTechnopark h2 {
-    font-size: 2em;
-    margin: 8% 0
+    font-size: 2rem;
 }
 
 .childrenTechnopark p, .contacts__email a, .contacts__phone a, .courseInfo p, .courseType__length p, .description p, .locationInfo p, .peopleContacts p, .scheduleInfo {
@@ -111,22 +113,13 @@ body {
     font-weight: bold;
 }
 
-.childrenTechnopark h2 span {
-    color: #0c5d5e
-}
-
 .whyUs {
     margin-top: 6%;
     margin-bottom: 3%
 }
 
-.photoGallery {
-    margin: 1% 0 0
-}
-
 .photoGallery a {
     text-decoration: underline;
-    color: #0c5d5e;
     font-size: 1.2em
 }
 
@@ -149,7 +142,6 @@ body {
 
 .groupsInfo {
     margin-top: 3%;
-    color: #0c5d5e;
     font-size: 1.2em
 }
 
@@ -306,7 +298,6 @@ iframe {
 }
 
 .option {
-    color: #0c5d5e;
     font-size: 1.2em;
     margin-bottom: 2%;
     text-align: center
@@ -322,10 +313,6 @@ iframe {
     margin: 0 0 2rem;
     height: .8em;
     background-color: #0c5d5e
-}
-
-.activityModalInfo__content p span {
-    color: #0c5d5e
 }
 
 .activityModalInfo__content p:not(.lastP) {
@@ -348,7 +335,6 @@ iframe {
 .activityModalAdditional__partners {
     background: #ebebeb;
     border-radius: 10px;
-    color: #0c5d5e;
     padding: 2rem;
     margin: 1rem 0 0
 }
@@ -474,7 +460,11 @@ iframe {
 @media screen and (max-width: 767.5px) {
     ul {
         padding-left: 0;
-        padding-inline-start: 0
+        padding-inline-start: .1rem
+    }
+
+    .bd-modal-order img{
+        display: none !important;
     }
 
     .activityModalInfo__header h5 {
@@ -750,10 +740,6 @@ iframe {
 }
 
 @media screen and (max-width: 1114.5px) {
-    .bd-modal-order h3 {
-        margin: 2% 0;
-    }
-
     .bd-modal-order .modalOrderInfo {
         margin: 0 0 2% 0;
     }
