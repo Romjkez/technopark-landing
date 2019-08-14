@@ -15,24 +15,24 @@ getHead('', 0);
         <button data-toggle="modal" data-target=".bd-modal-order">Записаться!</button>
     </div>
 </header>
+<section role="complementary" class="container-fluid news pb-4">
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+            <h2 class="my-5 text-center text-white">Последние новости</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+            <ul class="list-unstyled">
+                <li class="h5"><a class="text-white" href="news/1">- Открыта запись на курс «АВТОКОНСТРУИРОВАНИЕ»</a></li>
+                <li class="h5"><a class="text-white" href="news/2">- Запуск всех курсов со 2 сентября</a></li>
+                <li class="h5"><a class="text-white" href="news/3">- 30 сентября - запуск 🚀 проекта «УЧЕБНЫЙ ДЕНЬ В ДЕТСКОМ
+                        ТЕХНОПАРКЕ»</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
 <main class="container-fluid" role="main">
-    <section role="complementary" class="news pb-4">
-        <div class="row">
-            <div class="col-xl-8 offset-xl-2">
-                <h2 class="my-5 text-center" style="color:#ff9a2e">Последние новости</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-8 offset-xl-2">
-                <ul class="list-unstyled">
-                    <li class="h5"><a class="text-primary" href="news/1">- Открыта запись на курс «АВТОКОНСТРУИРОВАНИЕ»</a></li>
-                    <li class="h5"><a class="text-primary" href="news/2">- Запуск всех курсов со 2 сентября</a></li>
-                    <li class="h5"><a class="text-primary" href="news/3">- 30 сентября - запуск 🚀 проекта «УЧЕБНЫЙ ДЕНЬ В ДЕТСКОМ
-                            ТЕХНОПАРКЕ»</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
     <div class="row mt-3">
         <div class="about text-right col-sm-4 offset-sm-8 col-xl-3 offset-xl-8 col-xxl-2 offset-xxl-8 line-left"><p>О
                 <span class="font-weight-bold">НАС</span></p></div>
