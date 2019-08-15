@@ -42,8 +42,9 @@ body {
 .text-main {
     color: #0c5d5e;
 }
-.news {
-    background:#ed7b07 !important;
+
+.news .row {
+    background: #ed7b07 !important;
 }
 
 .headerWrapper {

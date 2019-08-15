@@ -15,7 +15,7 @@ getHead('', 0);
         <button data-toggle="modal" data-target=".bd-modal-order">Записаться!</button>
     </div>
 </header>
-<section role="complementary" class="container-fluid news pb-4">
+<section role="complementary" class="container-fluid news pb-4" >
     <div class="row">
         <div class="col-xl-8 offset-xl-2">
             <h2 class="my-5 text-center text-white">Последние новости</h2>
@@ -23,7 +23,7 @@ getHead('', 0);
     </div>
     <div class="row">
         <div class="col-xl-8 offset-xl-2">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled pb-4">
                 <li class="h5"><a class="text-white" href="news/1">- Открыта запись на курс «АВТОКОНСТРУИРОВАНИЕ»</a></li>
                 <li class="h5"><a class="text-white" href="news/2">- Запуск всех курсов со 2 сентября</a></li>
                 <li class="h5"><a class="text-white" href="news/3">- 30 сентября - запуск 🚀 проекта «УЧЕБНЫЙ ДЕНЬ В ДЕТСКОМ
@@ -659,6 +659,16 @@ getScripts(0);
 <script>
     window.onload = function () {
         $("input[type='tel']").mask("+7(999) 999-9999");
+
+        document.querySelectorAll('li > a').forEach(function (itm) {
+            itm.addEventListener('touchstart', function () {
+                itm.style.textDecoration='underline';
+            });
+            itm.addEventListener('touchend', function () {
+                itm.style.textDecoration='none';
+            })
+        });
+
         if (screen.width > 768) {
             $("[data-tooltip]").mousemove(function (eventObject) {
                 $data_tooltip = $(this).attr("data-tooltip");
