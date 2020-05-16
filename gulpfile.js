@@ -31,5 +31,32 @@ gulp.task('build', () => {
         .pipe(gulp.dest('build/assets'))
 });
 
+function css() {
+    let plugins = [
+        autoprefixer({browsers: ['last 2 versions']}),
+        cssnano()
+    ];
+    return gulp.src('assets/css/style.css')
+        .pipe(postcss(plugins))
+        .pipe(gulp.dest('build/assets/css'));
+}
 
-gulp.task('default', ['css', 'minifyIndex', 'build']);
+function minifyIndex() {
+    return gulp.src('*.php')
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('build'))
+}
+
+function build() {
+    return gulp.src(pathsToMove, {base: 'assets/'})
+        .pipe(gulp.dest('build/assets'))
+}
+
+
+async function defaultTask() {
+    css();
+    minifyIndex();
+    build();
+}
+
+exports.default = defaultTask
