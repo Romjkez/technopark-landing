@@ -248,12 +248,11 @@ getHead('', 0);
             </div>
             <div class="contacts__phone">
                 <img src="assets/img/phone.svg" alt="Phone" draggable="false">
-                <a href="tel:+79150027251">+7 (915) 002-72-51</a>
+                <a href="tel:+79689048406">+7 (968) 904-84-06</a>
             </div>
         </div>
         <div class="peopleContacts col-xl-6 col-xxl-5 order-0 order-xl-1 d-flex justify-content-center align-items-center">
-            <p>Администратор - Антонова Александра <span>+7 (926) 227-31-88</span><br>
-                Маркетолог - Хлопцева Екатерина <span>+7 (968) 904-84-06</span><br><br>
+            <p>Администратор - <a href="tel:+79689048406">+7 (968) 904-84-06</a><br>
                 Время работы - с <span>9.30</span> до <span>20.00</span> Пн-Сб, Вс - выходной
             </p>
         </div>
