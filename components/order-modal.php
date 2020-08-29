@@ -22,8 +22,7 @@ function getOrderModal($level){
                             <div class="modalOrderInfo d-flex flex-wrap">
                                 <div class="modalOrderInfo__telTitle w-25">Телефон:</div>
                                 <div class="modalOrderInfo__telContent w-75">
-                                    <a href="tel:+79150027251">+7 (915) 002-72-51</a><br>
-                                    <a href="tel:+79262273188">+7 (926) 227-31-88</a>
+                                    <a href="tel:+79689048406">+7 (968) 904-84-06</a><br>
                                 </div>
                                 <div class="modalOrderInfo__addressTitle w-25">Адрес:</div>
                                 <div class="modalOrderInfo__addressContent w-75">ул. Лефортовский Вал, 26 Москва</div>
